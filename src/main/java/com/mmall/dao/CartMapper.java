@@ -15,6 +15,5 @@ public interface CartMapper {
     int updateByPrimaryKeySelective(Cart record);
 
     int updateByPrimaryKey(Cart record);
-    int checkUsername(String username);
-    User selectLogin(@Param("username") String username,@Param("password") String password);
+
 }

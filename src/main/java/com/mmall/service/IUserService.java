@@ -9,5 +9,8 @@ import org.omg.CORBA.Object;
  */
 public interface IUserService {
      ServerResponse<User> login(String usrname, String password);
-
+     ServerResponse<String> register(User user);
+     ServerResponse<String> checkValid(String str,String type);
+     ServerResponse<String> selectQuestion(String username);
+     ServerResponse<String> checkAnswer(String username,String question,String answer);
 }
